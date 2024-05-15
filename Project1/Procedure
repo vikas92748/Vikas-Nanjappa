@@ -1,0 +1,17 @@
+Concept: Using Virtual private cloud (VPC), Creating a secured EC2 public and private instance
+
+Subnets:
+	Public subnet: Reachable from the internet, ideal for instances that need to be accessed externally (e.g., web servers).
+	Private subnet: Isolated from the internet, more secure for critical resources (e.g., databases).
+
+EC2 Instances:
+	Launched in both public and private subnets based on their needs.
+
+Jump Host:
+	An EC2 instance placed in the public subnet.
+	Serves as a stepping stone to access private instances. You connect to the jump host and then jump to the private instance.
+	Improves security by not exposing private instances directly to the internet.
+
+Benefits:
+	Enhanced Security: Private instances are shielded from direct internet access.
+	Controlled Access: Jump host acts as a single point of entry for managing private instances.
